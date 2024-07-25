@@ -1,0 +1,27 @@
+const prompt = require('prompt-sync')();
+
+console.log("@@@@Bem Vindo a nossa calculadora@@@@\n\n qual operação você deseja:\n\n {s} somar\t {d} diminuir\t {m} multiplicar\n");
+
+let opcao = prompt()
+
+if (opcao == "s"){
+    console.log("Digite os Números:")
+    num1 = parseFloat(prompt())
+    num2 = parseFloat(prompt())
+    resultado = num1 + num2
+    console.log("Seus Resultado é:" + resultado)
+}
+else if (opcao == "d"){
+    console.log("Digite os Números:")
+    num1 = parseFloat(prompt())
+    num2 = parseFloat(prompt())
+    resultado = num1 - num2
+    console.log("Seus Resultado é:" + resultado)
+}
+else if (opcao == "m"){
+    console.log("Digite os Números:")
+    num1 = parseFloat(prompt())
+    num2 = parseFloat(prompt())
+    resultado = num1 * num2
+    console.log("Seus Resultado é:" + resultado)
+}
