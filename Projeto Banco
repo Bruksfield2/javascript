@@ -1,0 +1,34 @@
+const prompt = require('prompt-sync')();
+
+this.saldo = '';
+
+while (true) {
+
+    console.log("======== Bem-vindo ao Sistema integrado KBJ ======== \n Digite qual opção você deseja: \n [d] Depósito \n [s] Sacar \n [q] Sair \n================================================")
+    let opcao = prompt()
+    if (opcao == "d"){
+      console.log("Quanto deseja Depositar:")
+      let valor1 = parseFloat(prompt ());
+       this.saldo += valor1
+
+        console.log("=================================================\n Depósito bem sucessedido\n \n Saldo atual:R$"+ this.saldo + "\n=================================================")
+    }
+
+    else if (opcao == "s"){
+
+        console.log("Digite quanto deseja sacar:")
+        let valor2 = parseFloat(prompt());
+        this.saldo -= valor2
+
+        console.log("=================================================\n Depósito feito com sucesso\n \n Saldo atual:R$"+ this.saldo + "\n \n=================================================")
+    }
+    else if (opcao == "q"){
+
+        console.log("=================================================\n\n" + " MUITO OBRIGADO POR TESTAR NOSSA PLATAFORMA VOLTE SEMPRE \n\n" +"=================================================" )
+       break
+    }
+else{
+    console.log("Operação inválida")
+break
+}
+}
